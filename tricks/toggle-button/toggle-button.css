@@ -1,0 +1,90 @@
+.toggle-button-wrapper {
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.toggle-button-label {
+  display: table-cell;
+  padding-right: 15px;
+  width: 64px;
+  font-size: 13px;
+  line-height: 34px;
+  font-weight: bold;
+  text-align: right;
+  letter-spacing: normal;
+  color: #9b9898;
+  box-sizing: content-box;
+}
+
+.toggle-button-label:after {
+  content: 'Disabled';
+}
+
+.toggle-button-label.toggle-button-label-enable:after {
+  content: 'Enabled';
+}
+
+.toggle-button-btn {
+  display: table-cell;
+  position: relative;
+  background-color: #484545;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 2px solid #484545;
+  height: 30px;
+  cursor: pointer;
+  width: 76px;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  box-sizing: content-box;
+}
+
+.toggle-button-btn button {
+  cursor: pointer;
+  outline: 0;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  width: 36px;
+  height: 30px;
+  background-color: white;
+  float: left;
+  transition: left 0.3s;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button-btn > i.fa-check {
+  display: none;
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  color: #fff;
+}
+
+.toggle-button-btn > i.fa-times {
+  position: absolute;
+  right: 13px;
+  top: 6px;
+  color: #fff;
+}
+
+.toggle-button-btn-selected {
+  background-color: #00a65c;
+  border: 2px solid #00a65c;
+}
+
+.toggle-button-btn-selected button {
+  left: 40px;
+  top: 0;
+  margin: 0;
+  border: none;
+  width: 36px;
+  height: 30px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
