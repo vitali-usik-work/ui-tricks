@@ -1,0 +1,31 @@
+.twb-wrapper {
+  width: 100%;
+  height: 50px;
+  background: #f7f7f7;
+  border: 1px solid #ebebeb;
+  margin-top: 30px;
+}
+
+.twb-wrapper:before,
+.twb-wrapper:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.twb-wrapper:before {
+  left: 49px;
+  top: -28px;
+  border-color: transparent transparent #ebebeb transparent;
+  border-width: 14px;
+}
+
+.twb-wrapper:after {
+  left: 50px;
+  top: -25px;
+  border-color: transparent transparent #f7f7f7 transparent;
+  border-width: 13px;
+}
